@@ -7,8 +7,11 @@ cnv.width = 800;
 cnv.height = 600;
 
 // Global Variables
-let grades = [60, 70, 45, 20, 40, 90, 100, 30, 45, 75, 40, 80];
+let grades = [];
 let max = 100; // grade values should be b/t 0 and max
+for (let i = 0; i < 50; i++) {
+    grades.push(randomInt(0, 101));
+}
 
 // Main Program Loop
 requestAnimationFrame(draw);
